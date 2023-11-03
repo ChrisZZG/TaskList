@@ -1,0 +1,126 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 0;
+    background: url(assets/background2.png) no-repeat center center/cover;
+}
+.contenedor{
+  width: 700px;
+  min-height: 500px;
+  background-color: transparent;
+  backdrop-filter: blur(15px);
+  padding: 40px;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+
+   
+}
+
+h1{
+    font-size: 50px;
+    font-weight: bold;
+    color: antiquewhite;
+}
+
+input{
+    width: 80%;
+    height: 50px;
+    font-size: 25px;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid transparent;
+    text-align: center;
+    background: transparent;
+
+}
+
+input:hover{
+    background-color: rgb(214, 174, 63);
+}
+
+button{
+    width: 150px;
+    height: 60px;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(214, 174, 63);
+    color: rgb(88, 88, 87);
+    cursor: pointer;
+    user-select: none;
+}
+
+button:hover{
+    filter: drop-shadow(0 0 10px #dcdcdc);
+
+}
+
+#lista-de-tareas{
+    width: 80%;
+    margin-top: 20px;
+}
+
+.tarea{
+    width: 100%;
+    min-height: 70px;
+    font-size: 25px;
+    padding: 10px;
+    margin: 10px;
+    color: antiquewhite;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.tarea.completada{
+    text-decoration: line-through;
+    
+}
+
+.tarea p{
+    max-width: 350px;
+
+}
+
+.icono{
+    margin: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.icono-completar{
+    background: url(assets/checkIcon.png) center center/cover no-repeat;
+    border: none;
+}
+
+.icono-eliminar{
+    background: url(assets/trashIcon.png) center center/cover no-repeat;
+    border: none;
+}
+
+.icono-completar:hover,
+.icono-eliminar:hover{
+    filter: drop-shadow(0 0 10px #dcdcdc);
+}
